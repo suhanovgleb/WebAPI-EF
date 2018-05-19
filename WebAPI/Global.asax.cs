@@ -12,9 +12,10 @@ namespace WebAPI
     {
         protected void Application_Start()
         {
-            WebApiConfig.Register(GlobalConfiguration.Configuration);
-            //GlobalConfiguration.Configure(WebApiConfig.Register);
+            //WebApiConfig.Register(GlobalConfiguration.Configuration);
+            GlobalConfiguration.Configure(WebApiConfig.Register);
             System.Data.Entity.Database.SetInitializer(new OrdersListDbInitializer());
+            GlobalConfiguration.Configuration.EnsureInitialized();
         }
     }
 }
