@@ -11,11 +11,11 @@ namespace WebAPI.Models
     public class Order
     {
         [Key]
-        [DataMember(Name = "id")]
+        [DataMember]
         public int Id { get; set; }
-        [DataMember(Name = "title")]
+        [DataMember]
         public string Title { get; set; }
-        [DataMember(Name = "complete")]
+        [DataMember]
         public bool Complete { get; set; }
     }
 }
