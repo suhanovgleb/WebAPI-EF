@@ -10,9 +10,11 @@ using Breeze.ContextProvider.EF6;
 using WebAPI.Models;
 using Newtonsoft.Json.Linq;
 using Breeze.ContextProvider;
+using System.Web.Http.Cors;
 
 namespace WebAPI.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     [BreezeController]
     public class BreezeController : ApiController
     {
