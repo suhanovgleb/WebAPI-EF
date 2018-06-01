@@ -17,5 +17,7 @@ namespace WebAPI.Models
         public string Title { get; set; }
         [DataMember]
         public bool Complete { get; set; }
+        [DataMember]
+        public DateTime CreationTime { get; set; }
     }
 }

@@ -14,7 +14,7 @@ namespace WebAPI.Context
         {
             base.Seed(context);
 
-            var orders = new Order { Title = "Test", Complete = true };
+            var orders = new Order { Title = "Test", Complete = true, CreationTime = DateTime.Now };
 
             context.Orders.Add(orders);
             context.SaveChanges();
